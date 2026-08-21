@@ -1,0 +1,51 @@
+{
+  "patches": {
+    "pkg:npm/handlebars@4.0.14": {
+      "uuid": "5e70a02b-8b1d-49ab-b26b-fba44f6e5362",
+      "exportedAt": "Tue, 21 Jul 2026 17:54:20 GMT",
+      "files": {
+        "dist/amd/handlebars/compiler/javascript-compiler.js": {
+          "beforeHash": "c0eaa0417e55e85aeed3e6d6f78717c520683716f77098bc76f9f6e53bcd06b9",
+          "afterHash": "31171e8d80d1c25bb66037c119f82e682683a2b37bd1005eb32fe4eb24ae25ac"
+        },
+        "dist/cjs/handlebars/compiler/javascript-compiler.js": {
+          "beforeHash": "a06782d8d2c0621553e1e5dbd241e88eca35a63871e65885f735a0f7f5cb20db",
+          "afterHash": "a17bcf7416f186dd5c0ea5919d9db6702a505946f414258555ceb059338ce3d1"
+        },
+        "dist/handlebars.amd.js": {
+          "beforeHash": "2cfe392c8c23e0de8fa577631a8ee7535c2d86372a989d125a20d33554475b3f",
+          "afterHash": "f36a6b316390d19b1426afb31806c0f42e58e2d86a1e7aff4c65f437f25f69a2"
+        },
+        "dist/handlebars.amd.min.js": {
+          "beforeHash": "1b2c40dd3957dc9709041a6c34e76f4ae8fba9f2a45d4b1e4f05a3fc763157df",
+          "afterHash": "1d7aa998888b2a3b6a5d7268828fd3380e4200e4bea6738ecc4052ac0ccf479b"
+        },
+        "dist/handlebars.js": {
+          "beforeHash": "316c6795ea06b1939ac5d9bb6c255cd4e784d2464f71b91d1d8ba0f422e5c5f8",
+          "afterHash": "34a02c697a6d720c138f0880ba8df379bd9f38dca2803189eea599068f947d52"
+        },
+        "dist/handlebars.min.js": {
+          "beforeHash": "59d6fa060654567cb794593480e496a1223eab9d477d6ffe25a799eb8d81d30c",
+          "afterHash": "b0c855aace3ad84a936da102f2e6a36a9040192e0d7f134cd9bbcbdf5736d6c3"
+        },
+        "lib/handlebars/compiler/javascript-compiler.js": {
+          "beforeHash": "b248592ef1d01a8f85db80ea923d5f1e7ef38d36081d72ca24591bc1a18d0ed2",
+          "afterHash": "8c29bf6e38b394f091266a787a740c77b715c1b91c2f126cf149203fc5afa97a"
+        }
+      },
+      "vulnerabilities": {
+        "GHSA-765h-qjxv-5f44": {
+          "cves": [
+            "CVE-2021-23383"
+          ],
+          "summary": "Prototype Pollution in handlebars",
+          "severity": "CRITICAL",
+          "description": "The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an untrusted source."
+        }
+      },
+      "description": "",
+      "license": "",
+      "tier": "free"
+    }
+  }
+}
